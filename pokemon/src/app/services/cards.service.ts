@@ -13,4 +13,8 @@ export class CardsService {
     return this.http.get('https://api.pokemontcg.io/v1/cards');
   }
 
+  getCardId(id: string): Observable<any> {
+    return this.http.get(`https://api.pokemontcg.io/v1/cards/${id}`);
+  }
+
 }
