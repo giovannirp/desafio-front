@@ -1,0 +1,18 @@
+$breakpoint-mob: 480px;
+
+.details {
+  .widthScreen {
+    width: 35%;
+    @media (max-width: $breakpoint-mob) {
+      width: 98%;
+    }
+  }
+
+  .contentDetails {
+    display: flex;
+
+    @media (max-width: $breakpoint-mob) {
+      flex-direction: column;
+    }
+  }
+}

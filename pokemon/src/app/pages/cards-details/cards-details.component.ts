@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-cards-details',
   templateUrl: './cards-details.component.html',
-  styleUrls: ['./cards-details.component.css']
+  styleUrls: ['./cards-details.component.scss']
 })
 export class CardsDetailsComponent implements OnInit {
 
@@ -16,9 +16,6 @@ export class CardsDetailsComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit() {
-
-    //    this.musicasService.musicaById(this.route.snapshot.params['id'])
-
     const id = String(this.route.snapshot.paramMap.get('id'));
 
     this.cardsService.getCardId(id)

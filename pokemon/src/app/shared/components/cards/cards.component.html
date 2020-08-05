@@ -1,10 +1,13 @@
 <div class="row mt-5">
   <div class="col-sm-12 mt30">
     <input class="form-control" [(ngModel)]="searchCards" name="buscar"
-      placeholder="Buscar" />
+      placeholder="Buscar cartas" />
   </div>
 </div>
-<h5 class="mt-4 mb-4">
+<div class="row ml-2 mt-3" *ngIf="(cards.cards | filter:searchCards).length !== 0">
+  <p class="text-info">Total de cartas cadastradas <strong>{{cards.cards.length}}</strong></p>
+</div>
+<h5 class="mt-2 mb-4">
   Listas em destaque
 </h5>
 <div class="row mb-2">
@@ -21,8 +24,8 @@
           </div>
           <a class="stretched-link">{{card?.set}}</a>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="{{card.imageUrl}}" width="180" height="250" alt="">
+        <div class="col-auto d-lg-block">
+          <img src="{{card.imageUrl}}" width="180" height="250" alt="{{card?.name}}">
         </div>
       </div>
   </div>

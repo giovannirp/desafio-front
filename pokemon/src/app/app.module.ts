@@ -11,7 +11,6 @@ import { CardsComponent } from './shared/components/cards/cards.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
 import { CardsDetailsComponent } from './pages/cards-details/cards-details.component';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { CardsDetailsComponent } from './pages/cards-details/cards-details.compo
     CardsComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent,
     CardsDetailsComponent
   ],
   imports: [

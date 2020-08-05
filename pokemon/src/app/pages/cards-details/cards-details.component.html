@@ -1,24 +1,37 @@
-<p class="mt30">
-  sdafsdf
-  sdafsdfsfd
-  sdafsdfsfd<Br>
-    sdafsdfsfd<Br>
-      sdafsdfsfd<Br>
-        sdafsdfsfd<Br>
-          sdafsdfsfd<Br>
-            sdafsdfsfd<Br>
-              sdafsdfsfd<Br>
-                sdafsdfsfd<Br>
-                  sdafsdfsfd<Br>
-                    sdafsdfsfd<Br>
-                      sdafsdfsfd<Br>
-                        sdafsdfsfd<Br>
-                          sdafsdfsfd<Br>
-                            sdafsdfsfd<Br>
-                              sdafsdfsfd<Br>
-                                sdafsdfsfd<Br>
-                                  sdafsdfsfd<Br>
-                                    sdafsdfsfd<Br>
-                                    sdafsdfsfd<Br>
-                                      {{card?.name}}
-</p>
+<section class="details mt70">
+  <h2 class="mt-3 mb-3">{{card?.card?.name}}</h2>
+  <div class="contentDetails">
+    <img src="{{card.card.imageUrlHiRes}}" class="widthScreen mr-3" alt="">
+    <div class="ml-2 mt-2">
+      <h3 class="mb-0">{{card?.card?.supertype}}</h3>
+      <div class="mb-1 text-muted">{{card?.card?.set}}</div>
+      <p class="card-text mb-auto">{{card?.card?.evolvesFrom}}</p>
+      <strong>{{card?.card?.supertype}}</strong>
+      <div>{{card?.card?.set}}</div>
+      <strong>{{card?.card?.name}}</strong>
+      <strong class="text-danger d-block">{{card?.card?.retreatCost[0]}}</strong>
+      <span class="d-block">
+        {{card?.card?.supertype}}
+      </span>
+      <span class="d-block">
+        {{card?.card?.artist}}
+      </span>
+
+      <br clear="all" />
+      <strong class="d-block">
+        Descrição:
+      </strong>
+      <span class="d-block">
+        {{card?.card?.rarity}}
+      </span>
+      <span class="d-block">
+        {{card?.card?.set}}
+      </span>
+      <p>
+        {{card?.card?.text}}
+      </p>
+    </div>
+
+  </div>
+
+</section>
